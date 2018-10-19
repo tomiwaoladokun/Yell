@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/image"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#D2691E	"
+    android:orientation="vertical"
+    tools:context=".MainPage">
+
+    <TextView
+        android:layout_width="256dp"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:text="Welcome To ConservAid."
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/text1"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="ConservAid  Reserve is a large wildlife park located in the south-central part of Bauchi State, in northeastern Nigeria. It covers an area of about 2,244 square kilometres (866 sq mi) and is home to several natural warm water springs, as well as a wide variety of flora and fauna. Its location in the heartland of the West African savanna makes it a unique way for tourists and holidaymakers to watch wildlife in its natural habitat. ConservAid was originally created as a game reserve in 1956, but later designated Nigeria’s biggest national park in 1991. It is the most popular destination for tourists in Nigeria and, as such, plays a crucial role in the development and promotion of tourism and ecotourism in Nigeria. It is also one of the most popular eco-destinations in West Africa." />
+
+    <SearchView
+        android:layout_width="208dp"
+        android:layout_height="59dp"
+        android:background="#333"
+        android:queryHint="Search"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+    <com.mahfa.dnswitch.DayNightSwitch
+        android:id="@+id/dayNight"
+        android:layout_width="58dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+
+    <View
+        android:id="@+id/background_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0"
+        android:background="@color/colorPrimary" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+</RelativeLayout>
